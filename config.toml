@@ -1,0 +1,6 @@
+baseURL = 'https://kempasts.rezzamula.com/'
+languageCode = 'ms'
+title = 'KempasTS'
+
+[markup.goldmark.renderer]
+ unsafe = true
