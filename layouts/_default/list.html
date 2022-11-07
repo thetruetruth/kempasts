@@ -1,0 +1,18 @@
+
+{{ define "main" }}
+<section id="main" class="mt5">
+  <div>
+    <ul id="list" class="pl0">
+      <!-- prettier-ignore -->
+      {{ range .Data.Pages.ByDate.Reverse }}
+      <li class="list pl0 lh-copy">
+        <a class="f3 b dib black no-underline" href="{{ .Permalink}}">{{ .Title }}</a>
+        <span class="f6 gray db dib-ns">{{ .Date.Format "January 2, 2006" }}</span>
+      </li>
+      <!-- prettier-ignore -->
+      {{ end }}
+    </ul>
+  </div>
+</section>
+
+{{ end }}
